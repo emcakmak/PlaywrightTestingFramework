@@ -21,5 +21,6 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npx playwright install-deps
+      - run: npx playwright install 
       - run: npx playwright test
       
