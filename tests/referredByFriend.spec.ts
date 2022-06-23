@@ -10,8 +10,3 @@ test.describe("Share a referral to a brand by name - 'share by name' feature", a
         await shoppingCartPage.verifyCouponCode()
     })
 })
-
-
-
-
-
