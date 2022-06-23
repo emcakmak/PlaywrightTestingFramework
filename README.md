@@ -42,6 +42,25 @@ npm run report
 ## Playwright
 Playwright enables reliable end-to-end testing for modern web apps. It is used in this project as it provides support for a multitude of modern rendering engines including Chromium, WebKit, and Firefox. it also has native mobile emulation of Google Chrome for Android and Mobile Safari. 
 
+The below is taken from the playwright.config.ts file in the project. This emualates the viewport and engine of Chromium on a desktop and the Safari browser on an iPhone 12 Pro
+
+
+```js
+projects: [
+    {
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+      },
+    },
+    {
+      name: 'Mobile Safari',
+      use: {
+        ...devices['iPhone 12 Pro'],
+      },
+    },
+  ],
+```
 
 
 ## Page Object Model
