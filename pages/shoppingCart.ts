@@ -32,7 +32,7 @@ export class ShoppingCartPage {
 
     async enterCouponCode() {
         await this.page.frameLocator(this.frame).locator(this.codeInput).click();
-        await this.page.frameLocator(this.frame).locator(this.codeInput).fill(this.couponCodes[0]);
+        await this.page.frameLocator(this.frame).locator(this.codeInput).fill(this.couponCodes[0]); // Change index to test other names
         await this.page.frameLocator(this.frame).locator(this.apply).click();
     }
 

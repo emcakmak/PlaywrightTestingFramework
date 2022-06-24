@@ -1,3 +1,4 @@
+// This test uses the standard test fixture
 import { test } from '@playwright/test'
 import { Signup } from '../pages/signup'
 
